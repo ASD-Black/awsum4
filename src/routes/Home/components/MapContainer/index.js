@@ -4,6 +4,8 @@ import MapView from "react-native-maps";
 
 import styles from "./mapContainerStyles.js";
 
+import SearchBox from "../SearchBox";
+
 export const MapContainer = ({region})=>{
 
     return(
@@ -17,8 +19,9 @@ export const MapContainer = ({region})=>{
                     coordinate={region}
                     pinColor="green"
                 />
-                
+
             </MapView>
+            <SearchBox/>
         </View>
     )
 }
